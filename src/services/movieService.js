@@ -25,5 +25,5 @@ export function saveMovie(movie) {
 }
 
 export function deleteMovie(movieId) {
-  return http.delete(`${apiEndpoint}/${movieId}`);
+  return http.delete(movieUrl(movieId));
 }
