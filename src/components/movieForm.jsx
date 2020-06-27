@@ -22,7 +22,7 @@ class MovieForm extends Form {
       .label("Number in Stock"),
     dailyRentalRate: Joi.number().required().min(0).max(10).label("Rate"),
   };
-
+  //Used these functions to help declutter the componentDidMount()
   async populateGenres() {
     const { data: genres } = await getGenres();
     this.setState({ genres });
@@ -41,6 +41,7 @@ class MovieForm extends Form {
     }
   }
 
+  //This function is now clean and can be read easily
   async componentDidMount() {
     await this.populateGenres();
     await this.populateMovie();
