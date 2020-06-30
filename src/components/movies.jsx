@@ -67,6 +67,8 @@ class Movies extends Component {
     this.setState({ sortColumn });
   };
 
+  //Filtering the information for the page
+
   getPagedData = () => {
     const {
       pageSize,
