@@ -3,6 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
+    //Using bootstrap to add styling to the navBar
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand" to="/">
         Vidly
