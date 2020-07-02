@@ -95,6 +95,7 @@ class Movies extends Component {
   };
 
   render() {
+    //Using destructuring to make the variables
     const { length: count } = this.state.movies;
     const { pageSize, currentPage, sortColumn, searchQuery } = this.state;
 
