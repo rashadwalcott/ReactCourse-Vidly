@@ -1,8 +1,11 @@
 import axios from "axios";
 import logger from "./logService";
+import auth from "./authService";
 import { toast } from "react-toastify";
 
 //Making this component so if things have to be changed in the future it will all be in one spot
+
+axios.defaults.headers.common["x-auth-token"] = auth.getJwt();
 
 axios.interceptors.response.use(null, (error) => {
   const expectedError =
