@@ -28,7 +28,7 @@ export function getCurrentUser() {
 }
 
 export function getJwt() {
-  localStorage.getItem(tokenKey);
+  return localStorage.getItem(tokenKey);
 }
 
 export default {
